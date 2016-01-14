@@ -37,7 +37,7 @@ namespace USDCNY_offshore
             int setminute = 59;
             //int setseconde = 0;
 
-            int maxhour = 10;
+            int maxhour = 12;
             int maxminute = 26;
 
 
@@ -45,11 +45,11 @@ namespace USDCNY_offshore
             {
                 GetWebPrice getter = new GetWebPrice();
                 getter.GetTiemAndPrice();
-                getter.ConsolePrint();
+                //getter.ConsolePrint();
                 getter.LogTimeAndPrice();                
             }
 
-            //if( hour == maxhour && minute >= maxminute)
+            //if (hour == maxhour )
             //{
             //    System.Environment.Exit(0);
             //}

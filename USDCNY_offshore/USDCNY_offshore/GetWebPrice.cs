@@ -85,6 +85,7 @@ namespace USDCNY_offshore
             FileStream fs = new FileStream(@".\log.txt", FileMode.Append);
             StreamWriter sw = new StreamWriter(fs);
             sw.WriteLine("\r\n");
+            sw.WriteLine("log time" + DateTime.Now.ToString(""));
             sw.WriteLine("update time is: " + time);
             sw.WriteLine("buy price is: " + buy);
             sw.WriteLine("sell price is: " + sell);
