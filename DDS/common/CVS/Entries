@@ -1,0 +1,21 @@
+/CurrencyProcessor.cs/1.10/Sat Apr 14 13:15:42 2012//
+/IOmsITS.cs/1.1/Wed Sep 25 17:09:42 2013//
+/MarginRatioManager.cs/1.2/Wed Mar 14 07:03:52 2012//
+/OmsMarketManager.cs/1.7/Wed May  2 02:55:38 2012//
+/OmsPrice.cs/1.9/Fri May 18 10:05:04 2012//
+/OmsSessionManager.cs/1.1/Thu May  3 07:40:30 2012//
+/OmsSummary.cs/1.1/Mon Apr 30 11:48:00 2012//
+/Subscribe.cs/1.17/Wed Sep 25 17:09:43 2013//
+/amsOrder.cs/1.9/Wed Sep 25 17:09:43 2013//
+/amsTrade.cs/1.7/Wed Sep 25 17:09:43 2013//
+/common.csproj/1.18/Thu May  3 07:40:30 2012//
+/common.csproj.user/1.1/Tue Jun 29 09:46:38 2010//
+/omsCommon.cs/1.11/Sat Mar  3 08:24:18 2012//
+/omsOrder.cs/1.6/Wed Sep 25 17:09:43 2013//
+D/API////
+D/Database////
+D/IO////
+D/Models////
+D/Properties////
+D/Sockets////
+D/Utilities////

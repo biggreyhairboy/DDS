@@ -30,11 +30,6 @@ namespace OMS
             DDSServer.OnClientConnect += DDSServer_OnClientConnect;
             DDSServer.OnClientDisconnect += DDSServer_OnClientDisconnect;
             DDSServer.OnClientMessage += DDSServer_OnClientMessage;
-
-        }
-
-        public void Start()
-        {
             DDSServer.Start();
         }
 

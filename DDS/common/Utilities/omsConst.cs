@@ -1,0 +1,541 @@
+using System;
+
+namespace OMS.common.Utilities
+{
+    public class omsConst
+    {
+        public const int OMS_SYMBOL = 0;
+        public const int OMS_BID = 1;
+        public const int OMS_OFFER = 2;
+        public const int OMS_L_PRICE = 3;
+        public const int OMS_QUANTITY = 4;
+        public const int OMS_STATUS = 5;
+        public const int OMS_ORDER_NO = 6;
+        public const int OMS_EXCH_NO = 7;
+        public const int OMS_TRAN_NO = 8;
+        public const int OMS_REQUEST = 9;
+        public const int OMS_ACCOUNT = 10;
+
+        public const int OMS_ORDER_TYPE = 11;
+        public const int OMS_OPEN_CLOSE = 12;
+        public const int OMS_USER_NO = 13;
+        public const int OMS_SYMBOL_LIST = 14;
+        public const int OMS_ORIGINAL = 15;
+        public const int OMS_BID_SIZE = 16;
+        public const int OMS_VOLUME = 17;
+        public const int OMS_OPEN_IN = 18;
+        public const int OMS_OFFER_SIZE = 19;
+        public const int OMS_EXCHANGE = 20;
+
+        public const int OMS_NAME = 21;
+        public const int OMS_PRODTYPE = 22;
+        public const int OMS_CURRENCY = 23;
+        public const int OMS_LOTSIZE = 24;
+        public const int OMS_FREE_TEXT = 25;
+        public const int OMS_UNDSYMBOL = 26;
+        public const int OMS_STRIKE_PRC = 27;
+        public const int OMS_PUTCALL = 28;
+        public const int OMS_MATURITY = 29;
+        public const int OMS_ISIN = 30;
+
+        public const int OMS_PREV_CLOSE = 31;
+        public const int OMS_LOW = 32;
+        public const int OMS_TIME = 33;
+        public const int OMS_FILLQTY = 34;
+        public const int OMS_REMQTY = 35;
+        public const int OMS_CHI_NAME = 36;
+        public const int OMS_HIGH = 37;
+        public const int OMS_TURNOVER = 38;
+        public const int OMS_ERRORCODE = 39;
+        public const int OMS_INSTRUCT = 40;
+
+        public const int OMS_PRICE_1 = 41;
+        public const int OMS_PRICE_2 = 42;
+        public const int OMS_TRADETYPE = 43;
+        public const int OMS_SETTLETYPE = 44;
+        public const int OMS_COUNTERPARTY = 45;
+        public const int OMS_PRINCIPAL = 46;
+        public const int OMS_HEDGE = 47;
+        public const int OMS_NETCHANGE = 48;
+        public const int OMS_PE = 49;
+
+        public const int OMS_BID_SIZE_2 = 51;
+        public const int OMS_BID_SIZE_3 = 52;
+        public const int OMS_BID_SIZE_4 = 53;
+        public const int OMS_BID_SIZE_5 = 54;
+        public const int OMS_BID_QUEUE_1 = 55;
+        public const int OMS_BID_QUEUE_2 = 56;
+        public const int OMS_BID_QUEUE_3 = 57;
+        public const int OMS_BID_QUEUE_4 = 58;
+        public const int OMS_BID_QUEUE_5 = 59;
+
+        public const int OMS_ASK_SIZE_2 = 61;
+        public const int OMS_ASK_SIZE_3 = 62;
+        public const int OMS_ASK_SIZE_4 = 63;
+        public const int OMS_ASK_SIZE_5 = 64;
+        public const int OMS_ASK_QUEUE_1 = 65;
+        public const int OMS_ASK_QUEUE_2 = 66;
+        public const int OMS_ASK_QUEUE_3 = 67;
+        public const int OMS_ASK_QUEUE_4 = 68;
+        public const int OMS_ASK_QUEUE_5 = 69;
+        public const int OMS_CREDIT = 70;
+
+        public const int OMS_CREDITAPPLIED = 71;
+        public const int OMS_LINKS = 72;
+        public const int OMS_SPREAD = 73;
+        public const int OMS_USER_REF = 74;
+        public const int OMS_EXCH_MARKET = 75;
+        public const int OMS_EXCH_MARKET_STATUS = 76;
+        public const int OMS_CUSTOM_INFO = 77;
+        public const int OMS_EXCHANGEDEST = 78;
+        public const int OMS_POSCHANGE = 79;
+        public const int OMS_EXCH_SELECT = 80;
+
+        public const int OMS_BID_PRICE_2 = 81;
+        public const int OMS_BID_PRICE_3 = 82;
+        public const int OMS_BID_PRICE_4 = 83;
+        public const int OMS_BID_PRICE_5 = 84;
+
+        public const int OMS_ASK_PRICE_2 = 91;
+        public const int OMS_ASK_PRICE_3 = 92;
+        public const int OMS_ASK_PRICE_4 = 93;
+        public const int OMS_ASK_PRICE_5 = 94;
+        public const int OMS_NETPROCEED = 95;
+        public const int OMS_FTLR = 96;
+        public const int OMS_FTLR_AVE_QTY = 97;
+        public const int OMS_ARBITRAGE = 98;
+        public const int OMS_CCASS = 100;
+
+        public const int OMS_SHORTSELL = 101;
+        public const int OMS_YIELD = 102;
+        public const int OMS_PREMIUM = 103;
+        public const int OMS_CONVERTION_RATIO = 104;
+        public const int OMS_CONVERSION_RATIO = 104; // spelling correction
+        public const int OMS_EXERCISE_PRICE = 105;
+        public const int OMS_GEARING = 106;
+        public const int OMS_MA10 = 107;
+        public const int OMS_MOMENTUM14 = 108;
+        public const int OMS_RSI14 = 109;
+        public const int OMS_TRADE_1 = 110;
+
+        public const int OMS_TRADE_2 = 111;
+        public const int OMS_TRADE_3 = 112;
+        public const int OMS_TRADE_4 = 113;
+        public const int OMS_TRADE_5 = 114;
+        public const int OMS_AVG_PRICE = 115;
+        public const int OMS_DAILY_UPLIMIT = 116;  // daily upper limit which price can go up
+        public const int OMS_DAILY_DOWNLIMIT = 117;  // daily down limit which price can go down
+        public const int OMS_BOND_ACCRUEDINTEREST = 118;
+        public const int OMS_BOND_YTM = 119;
+        public const int OMS_BID_IDS = 120;
+
+        public const int OMS_ASK_IDS = 121;
+        public const int OMS_QUEUE_QTY = 122;
+        public const int OMS_BUYSELL_BALANCE = 123;
+        public const int OMS_BUYING_STRENGTH = 124;
+        public const int OMS_SELLing_STRENGTH = 125;
+        public const int OMS_LAST_MATCHING_VOLUME = 126;
+        public const int OMS_PERCENTAGE_CHANGE = 130;
+
+        public const int OMS_52_WKS_HIGH = 131;
+        public const int OMS_52_WKS_LOW = 132;
+        public const int OMS_OPEN_PRICE = 133;
+        public const int OMS_TRADE_DATE = 134;
+        public const int OMS_LINKED_STOCK = 135;
+        public const int OMS_RELATED_STOCK = 136;
+        public const int OMS_CLOSE_SETTLEMENT = 137;
+        public const int OMS_DAY_CLOSE = 138;
+        public const int OMS_SUSPENSION = 139;
+        public const int OMS_DUMMY_STOCK = 140;
+
+        public const int OMS_NEWS_SUBJECT = 150;
+
+        public const int OMS_NEWS_LANGUAGE = 151;
+        public const int OMS_NEWS_SYMBOL = 152;
+        public const int OMS_NEWS_INDUSTRY = 153;
+        public const int OMS_NEWS_COUNTRY = 154;
+        public const int OMS_TRADE_LIMIT = 155;
+        public const int OMS_CASH_BALANCE = 156;
+        public const int OMS_DEVICENAME = 157;
+        public const int OMS_SETTLEMENT_TYPE = 158;
+        public const int OMS_TEST_STOCK = 159;
+        public const int OMS_MSG_REF_ID = 160;
+
+        public const int OMS_MSG_SENDER = 161;
+        public const int OMS_MSG_RECIPIENT = 162;
+        public const int OMS_MSGSUBJECT = 163;
+        public const int OMS_OPTION_STYLE = 170;
+
+        public const int OMS_IMPLIED_VOL = 171;
+        public const int OMS_RSAKEY_N = 180;
+
+        public const int OMS_RSAKEY_E = 181;
+        public const int OMS_CHIPER_KEY = 182;
+        public const int OMS_ENCRYPTED_MSG = 183;
+        public const int OMS_CIPHER_NAME = 184;
+        public const int OMS_BOD_TRADE_LIMIT = 185;
+        public const int OMS_BOD_CASH_BALANCE = 186;
+        public const int OMS_COMMAND = 187;     // remember the last command
+        public const int OMS_USRMSG = 188;     // user message in order
+        public const int OMS_REALIZED_AMOUNT = 189;     // see omsOrder object
+        public const int OMS_REALIZED_ADJUST = 190;     // see omsOrder object
+
+        public const int OMS_SESSION_KEY = 191;     // unique session key generated by SSM
+        public const int OMS_I_LIMIT = 192;     // trading limit for internet.
+        public const int OMS_CLIENT_IP = 193;     // explicitly specify client IP address when login SSM
+        public const int OMS_LOT_LIMIT = 194;     // limit for total lot can be trade
+        public const int OMS_BOD_LOT_LIMIT = 195;     // BOD lot limit \
+        public const int OMS_FORTH_C_LIMIT = 196;     // forth coming limit
+        public const int OMS_SSM_RANDOMKEY = 197;     // The random key used by SSM to generate hash value
+        public const int OMS_SSM_HASHVALUE = 198;     // The hashed value generated by client to logon SSM
+        public const int OMS_SSM_LOGINREMARK = 199;     // The remark for the SSM to save in database
+
+        public const int OMS_FIRSTROW = 200;
+
+        public const int OMS_LASTROW = 299;
+
+        public const int OMS_OPERATORFLAG = 400;
+
+        public const int OMS_WORKING = 401;
+        public const int OMS_COMMISSION = 402;
+        public const int OMS_STAMPDUTY = 403;
+        public const int OMS_LEVY = 404;
+        public const int OMS_TOTAL = 405;
+        public const int OMS_TRDVALUE = 406;
+        public const int OMS_OPERATION = 407;
+        public const int OMS_MARKET_RATIO = 408;
+        public const int OMS_SUSPEND_USR = 409;
+        public const int OMS_SUSPEND_ACT = 410;
+
+        public const int OMS_SELLONLY_ACT = 411;
+        public const int OMS_SELLONLY_SEC = 412;
+        public const int OMS_UPFRATIO_ACT = 413;
+        public const int OMS_UPFRATIO_SEC = 414;
+        public const int OMS_COMPONENT = 415;
+        public const int OMS_ORDERDEPTH_BID = 416;
+        public const int OMS_ORDERDEPTH_ASK = 417;
+        public const int OMS_RUNNER = 418;     // the runner of the account in an order
+        public const int OMS_SHARES_OUTSTANDING = 420;
+
+        public const int OMS_TRADING_FEE = 421;     // trading fee for UW
+        public const int OMS_TAX_FEE = 422;     // tax fee for UW
+        public const int OMS_INV_LEVY = 423;     // InvLey for UW
+        public const int OMS_REPORT_FLAG = 424;     // report flag 0=not reported, 1 = reported, 2 = poss dup;
+
+        public const int OMS_DAILY_TLIMIT = 431;     // kingsway: DTL
+        public const int OMS_BOD_DAILY_TLIMIT = 432;     // kingsway: DTL initial value.
+
+        public const int OMS_CUTLOSS_VALUE = 445;
+
+        public const int OMS_TOTAL_APPROVALPENDING = 450;     // sinopac: total amount of approval pending
+
+        public const int OMS_HOLD_AMOUNT = 451;
+        public const int OMS_BANK_ACCOUNT = 452;
+        public const int OMS_HOLD_REFERENCE = 453;
+        public const int OMS_BANK_ID = 454;
+        public const int OMS_BASKET_NO = 455;
+        public const int OMS_WAVE_NO = 456;
+        public const int OMS_SYSTEMREF = 457;
+        public const int OMS_APPROVALAPPLIED = 458;
+        public const int OMS_APPROVALCHANGE = 459;
+        public const int OMS_APPROVALID = 460;
+
+        public const int OMS_VALIDATEDLEVEL = 461;
+        public const int OMS_REJECTID = 462;
+        public const int OMS_LASTUSER = 463;
+        public const int OMS_MINORCODE = 464;     // minor code for error
+        public const int OMS_BOD_WEBTRADELIMIT = 467;    //for KGI ,record the PSL WEB(Web TradeLimit)
+        public const int OMS_WEBTRADELIMIT = 468;
+        public const int OMS_ACCT_AVAILABLEB = 469;
+        public const int OMS_SHORT_QUANTITY = 470;
+
+        public const int OMS_BOD_TRDFUND = 471;       // BOD tradable fund
+        public const int OMS_TRDFUND = 472;       // tradable fund
+        public const int OMS_BOD_WITHDRAWFUND = 473;       // BOD withdraw able fund
+        public const int OMS_WITHDRAWFUND = 474;       // withdraw able fund
+        public const int OMS_BOD_TRDSTOCKBAL = 475;       // BOD tradable stock balance
+        public const int OMS_TRDSTOCKBAL = 476;       // tradable stock balance
+        public const int OMS_BOD_WITHDRAWSTOCKBAL = 477;       // BOD withdraw able stock balance
+        public const int OMS_WITHDRAWSTOCKBAL = 478;       // withdraw able stock balance
+        public const int OMS_TODAYBUYQTY = 479;        // today buy qty (traded)
+        public const int OMS_TODAYSELLQTY = 480;        // today sell qty (traded)
+
+        public const int OMS_PENDBUYQTY = 481;        // today buy qty (pending)
+        public const int OMS_PENDSELLQTY = 482;        // today sell qty (pending)
+        public const int OMS_DEPOSITQTY = 483;        // stock deposit qty
+        public const int OMS_WITHDRAWQTY = 484;        // stock withdraw qty
+        public const int OMS_SYSREF_OWNER = 485;
+        public const int OMS_SYSREF_VALUE = 486;
+        public const int OMS_COMP_SYSREF = 487;
+        public const int OMS_DESK = 488;
+        public const int OMS_INSTRUCT_1 = 489;
+        public const int OMS_INSTRUCT_2 = 490;
+
+        public const int OMS_INSTRUCT_3 = 491;
+        public const int OMS_INSTRUCT_4 = 492;
+        public const int OMS_PRICE_3 = 493;
+        public const int OMS_PRICE_4 = 494;
+        public const int OMS_EXPIRATIONDATE = 495;      //   in the format MM/DD/YY
+        public const int OMS_USED_LIMIT = 496;
+        public const int OMS_USED_CASH_BALANCE = 497;
+        public const int OMS_ACCT_UNCLRCHEQUE = 498;
+        public const int OMS_ACCT_NWTWITHDRAWAB = 499;
+        public const int OMS_POSAPPLIED = 500;
+
+        public const int OMS_CREATETIME = 501;
+        public const int OMS_RESOURCE = 502;
+        public const int OMS_HELD = 503;
+        public const int OMS_CONTRACT_SIZE = 504;
+        public const int OMS_GB_NAME = 505;
+        public const int OMS_MARKETCAP = 506;
+        public const int OMS_MIN_TICK = 507;
+        public const int OMS_PASSWORD = 510;
+
+        public const int OMS_OPTION_DELTA = 511;
+        public const int OMS_OPTION_SPREAD = 512;
+        public const int OMS_OPTION_WHICHPRICE = 513;
+        public const int OMS_OPTION_THEORETICAL = 514;
+        public const int OMS_OPTION_VEGA = 515;
+        public const int OMS_OPTION_GAMMA = 516;
+        public const int OMS_MACHINE_ID = 520;    // For ITS
+
+        public const int OMS_GIVE_UP_MEMBER = 521;    // In oapi 17, place order
+        public const int OMS_REQ_NO = 530;
+        public const int OMS_OPEN_FOR_APPROVAL = 531;
+
+        public const int OMS_DELTA = 600;    //SPAN DELTA
+        public const int OMS_MSOMARGIN = 601;    //Minimium Short Option Margin
+        public const int OMS_IMSPREAD = 602;    //Inter-month spread margin
+        public const int OMS_AVAILABLEMARGIN = 603;
+        public const int OMS_REQUIREDMARGIN = 604;
+        public const int OMS_INITMARGIN = 605;
+        public const int OMS_MNTMARGIN = 606;
+        public const int OMS_PL = 607;
+        public const int OMS_MAINTMARGIN_RATIO = 608;   // maintainece Margin Ratio
+        public const int OMS_DAYTRADEMAGIN_RATIO = 609;     // day trade margin ratio
+        public const int OMS_HOLD_FUND = 626;
+        public const int OMS_WITHDRAWABLECASH_BAL = 700;
+        public const int OMS_TOTALLIMITW = 890;  // Limit withdrawal amount
+        public const int OMS_TOTALLIMITD = 891;  // Limit deposit amount
+        public const int OMS_TOTALSTOCKW = 892;  // Stock withdrawal value
+        public const int OMS_TOTALSTOCKD = 893;  // Stock deposit value
+        public const int OMS_TOTALCASHW = 894;  // Cash withdrawal amount
+        public const int OMS_TOTALCASHD = 895;  // Cash deposit amount
+        public const int OMS_ACCTSHAREVAL = 896;
+        public const int OMS_CLIMARGINRATE = 897;  // Margin ratio
+        public const int OMS_TOTALPENDS = 898;  // Pending sell value
+        public const int OMS_TOTALPENDB = 899;  // Pending buy value
+        public const int OMS_TOTALCOMPS = 990;  // Completed sell value
+        public const int OMS_TOTALCOMPB = 991;  // Completed buy value
+        public const int OMS_T2QTY = 992;
+        public const int OMS_T1QTY = 993;
+        public const int OMS_UNCLEARQTY = 994;  // Uncleared quantity
+        public const int OMS_QTYONHAND = 995;
+        public const int OMS_MARGINCALL = 996;
+        public const int OMS_ACCPVAL = 997;  // Acceptable value
+        public const int OMS_MKTVAL = 998;
+        public const int OMS_LOANAMT = 999;
+        public const int OMS_VALUEDATE = 1000;  // used by GTC voucher, the effective date of the transaction
+
+        public const int OMS_SELECT_PRICE = 1001;    // price selected by user
+        public const int OMS_SEQ_NUM = 1002;   // message sequence number
+        public const int OMS_SOURCE_TIME = 1100;   // added by TC to trace timestamp
+        public const int OMS_SOURCE_TIME2 = 1101;   // added by TC to trace timestamp
+        public const int OMS_SOURCE_TIME3 = 1102;   // added by TC to trace timestamp
+        public const int OMS_SOURCE_TIME4 = 1103;   // added by TC to trace timestamp
+        public const int OMS_SOURCE_TIME5 = 1104;   // added by TC to trace timestamp
+        public const int OMS_QUANTITY_1 = 1105;   // added Feb 2005 for order by TC
+        public const int OMS_QUANTITY_2 = 1106;
+        public const int OMS_QUANTITY_3 = 1107;
+        public const int OMS_QUANTITY_4 = 1108;
+        public const int OMS_VERSION = 1109;
+        public const int OMS_LAST_PRICE = 1110;    // field to help FIX execution report
+        public const int OMS_LAST_QUANTITY = 1111;
+        public const int OMS_LAST_STATUS = 1112;
+        public const int OMS_LAST_TRDNUM = 1113;
+        public const int OMS_LAST_PTYPE = 1114;
+        public const int OMS_LAST_EXETIME = 1115;
+        public const int OMS_REQ_STATUS = 1116;     // the external request status
+        public const int OMS_CREDIT2 = 1117;     // to store another credit change value
+        public const int OMS_ORD_INTERNAL = 1118;     // the OMSOrder internal fields, display for debug purpose.
+        public const int OMS_MODIFY_TIME = 1119;			// Modify Time
+
+        public const int OMS_InTerestAccurl = 1120;      // for KGI store the OMS_InterestAccurl
+        public const int OMS_InTerestAccurl_Date = 1121;      // for KGI store the OMS_InterestAccurl Date
+        public const int OMS_PPADJUST = 1200;      // for KGI keep the value of PPADJUST
+
+        public const int OMS_TRADED_QTY = 1210;      //accumulated traded qty for FIX.
+
+        public const int OMS_GTC_DEPOSIT_TRADEQTY = 1300;      // GTC the deposit Qty of Tradeable
+        public const int OMS_GTC_WITHDRAW_TRADEQTY = 1301;
+        public const int OMS_GTC_DEPOSIT_WITHDRAWQTY = 1302;   // GTC the deposit Qty of WithDrawAble
+        public const int OMS_GTC_WITHDRAW_WITHDRAWQTY = 1303;
+        public const int OMS_GTC_INFO = 1304;   // kingsway: '<order create date>, <original order price>, <total order quantity>' 
+
+        public const int OMS_HKMEX_ORDERBOOKID = 1400;
+        public const int OMS_HKMEX_ROUNDLOT = 1401;
+        public const int OMS_HKMEX_TRADEHALT = 1402;
+        public const int OMS_HKMEX_INSTRUMENT_ENABLE = 1403;
+
+        public const int OMS_MERCHANT_NUMBER = 1450;  //PME, for identify if use which bank
+        public const int OMS_PAYEE_BANK_ACCT = 1452;  //PME, 收款人银行账户
+        public const int OMS_PAYEE_BANK_ID = 1454;    //PME, 收款人银行行别
+
+        public const int OMS_NET_EQUITY = 1503;     
+
+        public const int MM_BID = 2001;  // Market Making
+        public const int MM_ASK = 2002;
+        public const int MM_BID_QUANTITY = 2007;
+        public const int MM_ASK_QUANTITY = 2008;
+
+        public const int OMS_EXEVALUE = 2010;      // for basket trade
+        public const int OMS_PERCCOMP = 2011;
+        public const int OMS_PENDVALUE = 2012;
+        public const int OMS_IMPINDEX = 2013;
+        public const int OMS_VWAP = 2014;
+        public const int OMS_EXEQTY = 2015;
+        public const int OMS_EXEPRICE = 2016;
+        public const int OMS_PENDQTY = 2017;
+        public const int OMS_LMT_PRICE = 2018;
+        public const int OMS_WEIGHTING = 2019;
+        public const int OMS_RiskCtrlLevel = 2020;
+        public const int OMS_CONTRACTDATE = 2021;
+        public const int OMS_EXTERNAL_UNDERLYER = 2022;
+        public const int OMS_EXTERNAL_EXCHANGE = 2023;
+
+        public const int DCASS_EXPORT_FILE_NAME = 3000;
+        public const int DCASS_INTRADAY_FLAG = 3001;      // 0 = Use results from evening margin calculations
+        // 1 = Use results from latest available intra day margin calculations
+        // 2 = Use results from latest available intra day margin call.
+        public const int DCASS_INFO_TYPE = 3002;
+        public const int DCASS_DATE_START = 3003;
+        public const int DCASS_DATE_END = 3004;
+        public const int DCASS_DATE_SETTLEMENT = 3005;
+        public const int DCASS_DATE_CLOSING = 3006;
+        public const int DCASS_LEVEL_TYPE = 3007;      // 1 = origin; 2 = margin
+        public const int DCASS_SUMMARY = 3008;      // 1 = yes; 2 = no
+
+        public const int DCASS_ACCOUNT_COUNTRY_ID = 3010;
+        public const int DCASS_ACCOUNT_EX_CUSTOMER = 3011;
+        public const int DCASS_ACCOUNT_ACCOUNT_ID = 3012;
+
+        public const int DCASS_TRADE_NUMBER = 3013;
+        public const int DCASS_TRADE_QUANTITY = 3014;
+        public const int DCASS_COMMISSION = 3015;
+        public const int DCASS_GIVE_UP_TEXT = 3016;
+        public const int DCASS_GIVE_UP_NUMBER = 3017;
+        public const int DCASS_EXERCISE_NUMBER = 3018;
+        /// <summary>
+        /// 0 = Only use trades specified in the query
+        /// 1 = Use real-time position for the account specified in the Account field, together with trades specified in this query.
+        /// 2 = Get sum margin requirement for all indirect pledging accounts of the customer specified in the account field.
+        /// </summary>
+        public const int DCASS_SIMULATE_POSITION = 3020;
+        /// <summary>
+        /// 1 = Only sum margin requirements
+        /// 2 = Level 1 + margin results per series
+        /// 3 = Level 2 + prices and valuation interval per series
+        /// 4 = Level 3 + volatilities for options
+        /// </summary>
+        public const int DCASS_SIMULATE_OUTLEVEL = 3021;
+        /// <summary>
+        /// 1. Specify market to use. If no item with type 1 is provided, all markets are used. It is possible to use 2 markets, by providing two items with item type = 1
+        /// 2. Bought trade
+        /// 3. Sold trade
+        /// 4. Payment
+        /// 5. Bought Delivery
+        /// 6. Sold Delivery
+        /// </summary>
+        public const int DCASS_SIMULATE_ITEMTYPE = 3022;
+
+        public const int OMS_TRADE_COUNT = 3117;     // for Level2
+        public const int OMS_AVG_BID = 3101;
+        public const int OMS_AVG_ASK = 3102;
+        public const int OMS_BID_AMOUNT = 3116;
+        public const int OMS_ASK_AMOUNT = 3119;
+        public const int OMS_BID_PRICE_6 = 3180;
+        public const int OMS_BID_PRICE_7 = 3181;
+        public const int OMS_BID_PRICE_8 = 3182;
+        public const int OMS_BID_PRICE_9 = 3183;
+        public const int OMS_BID_PRICE_10 = 3184;
+        public const int OMS_BID_SIZE_6 = 3155;
+        public const int OMS_BID_SIZE_7 = 3156;
+        public const int OMS_BID_SIZE_8 = 3157;
+        public const int OMS_BID_SIZE_9 = 3158;
+        public const int OMS_BID_SIZE_10 = 3159;
+        public const int OMS_BID_QUEUE_6 = 3136;
+        public const int OMS_BID_QUEUE_7 = 3137;
+        public const int OMS_BID_QUEUE_8 = 3138;
+        public const int OMS_BID_QUEUE_9 = 3139;
+        public const int OMS_BID_QUEUE_10 = 3140;
+        public const int OMS_ASK_PRICE_6 = 3190;
+        public const int OMS_ASK_PRICE_7 = 3191;
+        public const int OMS_ASK_PRICE_8 = 3192;
+        public const int OMS_ASK_PRICE_9 = 3193;
+        public const int OMS_ASK_PRICE_10 = 3194;
+        public const int OMS_ASK_SIZE_6 = 3165;
+        public const int OMS_ASK_SIZE_7 = 3166;
+        public const int OMS_ASK_SIZE_8 = 3167;
+        public const int OMS_ASK_SIZE_9 = 3168;
+        public const int OMS_ASK_SIZE_10 = 3169;
+        public const int OMS_ASK_QUEUE_6 = 3146;
+        public const int OMS_ASK_QUEUE_7 = 3147;
+        public const int OMS_ASK_QUEUE_8 = 3148;
+        public const int OMS_ASK_QUEUE_9 = 3149;
+        public const int OMS_ASK_QUEUE_10 = 3150;
+        public const int OMS_ETF_IOVP = 3130;     //Indicative Optimized Portfolio Value
+        public const int OMS_ISSUESHARE = 3201;
+        public const int OMS_CIRCULATESHARE = 3202;
+
+        public const int omsOrderBuy = 0;
+        public const int omsOrderSell = 1;
+
+        public const int omsOrderReject = -1;
+        public const int omsOrderNull = 0;
+        public const int omsOrderPending = 1;
+        public const int omsOrderPartialFill = 2;
+        public const int omsOrderFill = 3;
+        public const int omsOrderCancel = 4;
+        public const int omsOrderInactive = 5;
+        public const int omsOrderChecked = 6;
+        public const int omsOrderConfirm = 7;
+
+        public const int omsOrderNonHedge = 1;
+        public const int omsOrderHedge = 2;
+        public const int omsOrderLiquidHedge = 3;
+
+        public const int omsOrderAgent = 11;
+        public const int omsOrderPrincipal = 12;
+        public const int omsOrderRT = 13;
+
+        public const int omsOrderNotShortSell = 0;
+        public const int omsOrderShortSell = 1;
+        public const int omsOrderMMShortSell = 2;
+        public const int omsOrderCoverShortSell = 3;
+        public const int omsOrderIndexArbShortSell = 4;
+        public const int omsOrderFuturesMMShortSell = 5;
+
+        public const int amsTradeOddLot = 1;
+        public const int amsTradeManual = 2;
+        public const int amsTradePreopen = 3;
+        public const int amsTradeOversea = 4;
+
+        public const int amsTradeSettleNormal = 0;
+        public const int amsTradeIsolate = 10;
+        public const int amsTradeBuyIn = 11;
+
+        public const int amsCTFTradeAuto = 1;
+        public const int amsCTFTradeManualWith = 2;
+        public const int amsCTFTradeManualOut = 3;
+        public const int amsCTFTradeSemiAutoSpecOddLot = 4;
+        public const int amsCTFTradeSemiAutoOddLot = 5;
+        public const int amsCTFTradeSpecOddLot = 6;
+        public const int amsCTFTradeOddLot = 7;
+        public const int amsCTFTradePreOpening = 8;
+        public const int amsCTFTradeOverseas = 9;
+        public const int amsCTFTradeAuction = 10;
+
+        public const int omsMarketOpen = 1;
+        public const int omsMarketClosed = 2;
+    }
+}

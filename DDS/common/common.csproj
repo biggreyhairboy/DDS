@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7512F03-0B30-4547-AB10-FB658EEFDFCA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>common</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OMS.common</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="amsOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="amsTrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\MessageBoxManager.cs" />
+    <Compile Include="Database\AccessManager.cs" />
+    <Compile Include="Database\SqlHelper.cs" />
+    <Compile Include="IOmsITS.cs" />
+    <Compile Include="IO\ReadCSV.cs" />
+    <Compile Include="MarginRatioManager.cs" />
+    <Compile Include="Models\AccountModel\iAccountModel.cs" />
+    <Compile Include="Models\DataModel\DayTradeProfitLoss.cs" />
+    <Compile Include="Models\DataModel\iOrderModel.cs" />
+    <Compile Include="Models\DataModel\OrderModelBase.cs" />
+    <Compile Include="Models\DataModel\ProfitLossBase.cs" />
+    <Compile Include="Models\PositionModel\IObserverPositionUpdate.cs" />
+    <Compile Include="Models\PositionModel\ISubjectPositionUpdate.cs" />
+    <Compile Include="omsCommon.cs" />
+    <Compile Include="OmsMarketManager.cs" />
+    <Compile Include="OmsSessionManager.cs" />
+    <Compile Include="OmsSummary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CurrencyProcessor.cs" />
+    <Compile Include="Database\OmsSQLClient.cs" />
+    <Compile Include="IO\IniBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\OmsIni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\ReadIni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\ReadXml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AccountModel\AccountInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AccountModel\AccountModelBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AccountModel\DBAccountModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AccountModel\UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AccountModel\UserProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\OmsDatabaseManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\PositionModel\PortfolioList.cs" />
+    <Compile Include="Models\PositionModel\Position.cs" />
+    <Compile Include="Models\PositionModel\PositionData.cs" />
+    <Compile Include="omsOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OmsPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\BinaryProcessor.cs" />
+    <Compile Include="Sockets\DDSSynchonizer.cs" />
+    <Compile Include="Sockets\ITSSynchonizer.cs" />
+    <Compile Include="Sockets\SocketClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\Socketcommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\SocketReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\SocketServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\SocketWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\Synchonizer.cs" />
+    <Compile Include="Sockets\TDataBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TFIXLineMsgProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TLineMsgProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TOGMsgProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TOMSLineMsgProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TOMSMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TQueueLineMsgProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sockets\TSSMManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Subscribe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\BulkInsert.cs" />
+    <Compile Include="Utilities\Crypt32.cs" />
+    <Compile Include="Utilities\CSVParser.cs" />
+    <Compile Include="Utilities\DataProtection.cs" />
+    <Compile Include="Utilities\EntitlementConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Kernel32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\MessageUtil.cs" />
+    <Compile Include="Utilities\omsConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Enums.cs" />
+    <Compile Include="Utilities\OmsErrorConst.cs" />
+    <Compile Include="Utilities\OmsHelper.cs" />
+    <Compile Include="Utilities\OmsOrdConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\OmsParser.cs" />
+    <Compile Include="Utilities\TLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\User32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
