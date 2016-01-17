@@ -7,7 +7,7 @@
     <ProjectGuid>{21F6AC1C-48E7-4EB1-BDBD-899AF1397977}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DDS</RootNamespace>
+    <RootNamespace>OMS</RootNamespace>
     <AssemblyName>DDS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -58,6 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documents\Downloads\BankGateway_Work\BankGateway_Work\common\common.csproj">
+      <Project>{e7512f03-0b30-4547-ab10-fb658eefdfca}</Project>
+      <Name>common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

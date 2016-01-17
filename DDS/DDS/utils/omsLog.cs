@@ -7,7 +7,7 @@ using log4net;
 using System.Configuration;
 using System.Reflection;
 
-namespace DDS.lib
+namespace OMS.lib
 {
 
     public class omsLog

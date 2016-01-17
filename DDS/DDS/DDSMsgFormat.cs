@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace DDS
+namespace OMS
 {
     public class DDSMsgFormat
     {

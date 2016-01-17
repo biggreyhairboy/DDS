@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDS.lib
+namespace OMS.lib
 {
     public static class omsConst
     {
