@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DDS
 {
-    class Program
+    class CServer
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
