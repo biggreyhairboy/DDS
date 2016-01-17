@@ -51,7 +51,6 @@
     <Compile Include="utils\omsConst.cs" />
     <Compile Include="utils\omsLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="utils\omsServ.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

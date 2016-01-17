@@ -45,7 +45,7 @@ namespace OMS
             log4net.Config.XmlConfigurator.Configure();
             omsLog.log.Info(System.Environment.Version.ToString());
 
-            //todo: 将都配置的部分独立
+            //TODO:  将都配置的部分独立
             NameValueCollection config = (NameValueCollection)ConfigurationManager.GetSection("DDSGROUP/OMS_SVR");
             DDSIP = config["ip"];
             DDSPort = Convert.ToInt32(config["port"]);

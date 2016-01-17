@@ -12,8 +12,6 @@ namespace OMS.lib
 
     public class omsLog
     {
-        public static ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        
-
+        public static ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);       
     }
 }
