@@ -21,7 +21,7 @@ namespace OMS
             string DDSIP;
             int DDSPort;
             LoadDDSConfig(out DDSIP, out DDSPort);
-            CServer cserver = new CServer(DDSIP, DDSPort);
+            DDSServer cserver = new DDSServer(DDSIP, DDSPort);
             cserver.Start();
             Console.WriteLine("DDS begin listening");
             Console.ReadLine();
