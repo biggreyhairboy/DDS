@@ -112,22 +112,15 @@
     <Compile Include="amsTrade.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="API\MessageBoxManager.cs" />
-    <Compile Include="Database\AccessManager.cs" />
     <Compile Include="Database\SqlHelper.cs" />
-    <Compile Include="IOmsITS.cs" />
-    <Compile Include="IO\ReadCSV.cs" />
     <Compile Include="MarginRatioManager.cs" />
-    <Compile Include="Models\AccountModel\iAccountModel.cs" />
     <Compile Include="Models\DataModel\DayTradeProfitLoss.cs" />
-    <Compile Include="Models\DataModel\iOrderModel.cs" />
     <Compile Include="Models\DataModel\OrderModelBase.cs" />
     <Compile Include="Models\DataModel\ProfitLossBase.cs" />
     <Compile Include="Models\PositionModel\IObserverPositionUpdate.cs" />
     <Compile Include="Models\PositionModel\ISubjectPositionUpdate.cs" />
     <Compile Include="omsCommon.cs" />
     <Compile Include="OmsMarketManager.cs" />
-    <Compile Include="OmsSessionManager.cs" />
     <Compile Include="OmsSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -143,9 +136,6 @@
     <Compile Include="IO\ReadIni.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IO\ReadXml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Models\AccountModel\AccountInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -153,12 +143,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\AccountModel\DBAccountModel.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\AccountModel\UserInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\AccountModel\UserProfile.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Database\OmsDatabaseManager.cs">
@@ -175,7 +159,6 @@
     </Compile>
     <Compile Include="Sockets\BinaryProcessor.cs" />
     <Compile Include="Sockets\DDSSynchonizer.cs" />
-    <Compile Include="Sockets\ITSSynchonizer.cs" />
     <Compile Include="Sockets\SocketClient.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -207,25 +190,13 @@
     <Compile Include="Sockets\TOMSLineMsgProcessor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Sockets\TOMSMsg.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Sockets\TQueueLineMsgProcessor.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Sockets\TSSMManager.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Subscribe.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Utilities\BulkInsert.cs" />
-    <Compile Include="Utilities\Crypt32.cs" />
-    <Compile Include="Utilities\CSVParser.cs" />
-    <Compile Include="Utilities\DataProtection.cs" />
-    <Compile Include="Utilities\EntitlementConst.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Utilities\Kernel32.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -257,6 +228,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
